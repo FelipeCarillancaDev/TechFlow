@@ -22,6 +22,9 @@ para el proyecto de API de tareas.
 ![error-1.jpg](img/error-1.png)
 
 ## Resultados
+Se muestras pruebas de funcionamiento de los test en casos de ejecución correcta y caso en la cual se genero un error en 
+uno de los casos de prueba de los test para ver el comportamiento del pipeline, se detalla a continuación:
+
    
 - Resultados de la ejecución del pipeline
 ![ejecucion-exitosa.jpg](img/ejecucion-exitosa.png)
@@ -35,10 +38,12 @@ para el proyecto de API de tareas.
     expect(res.body.name).toEqual('felipe'); // <- Modificado Alice por felipe
   });
 ```
+![prueba-error-1.png](img/prueba-error-1.png)
+![fallo-el pipeline.png](img/fallo-el-pipeline.png)
 
 
 ---
-- Se adjunta Logs de ejecución de Jenkins
+- Se adjunta Logs de ejecución de Jenkins de Ejecución correcta
 ```
 Lanzada por el usuario felipe
 Obtained Jenkinsfile from git https://github.com/FelipeCarillancaDev/TechFlow.git
