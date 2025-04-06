@@ -27,7 +27,16 @@ para el proyecto de API de tareas.
 ![ejecucion-exitosa.jpg](img/ejecucion-exitosa.png)
 - Evidencia de la ejecución de las pruebas exitosas de Test
 ![ejecucion-pruebas-exitosas.png](img/ejecucion-pruebas-exitosas.png)
-  
+- Evidencia de la ejecución de las pruebas fallidas de Test. Se modificó parte del codigo de lo que espera la prueba
+```
+  it('should return a single user', async () => {
+    const res = await request(app).get('/users/1');
+    expect(res.statusCode).toEqual(200);
+    expect(res.body.name).toEqual('felipe'); // <- Modificado Alice por felipe
+  });
+```
+
+
 ---
 - Se adjunta Logs de ejecución de Jenkins
 ```
